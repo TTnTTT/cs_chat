@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ke50UA41Eemyp88nBcmgFw">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_kiO1IA41Eemyp88nBcmgFw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_kiXYAA41Eemyp88nBcmgFw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ke6bYA41Eemyp88nBcmgFw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ke6bYQ41Eemyp88nBcmgFw" name="dt">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ke7CcA41Eemyp88nBcmgFw" name="chat">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ke7CcQ41Eemyp88nBcmgFw" name="ui">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ke7Ccg41Eemyp88nBcmgFw" name="theme">
+            <packagedElement xmi:type="uml:Class" xmi:id="_ke7Ccw41Eemyp88nBcmgFw" name="Theme" isAbstract="true">
+              <ownedComment xmi:id="_ke83oA41Eemyp88nBcmgFw">
+                <body>/** 
+ * description:封装常用的Swing皮肤，解决不同皮肤之间像素比例的差距。
+ * @author 向海彪
+ */
+</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_kiQqUA41Eemyp88nBcmgFw" name="DEFAULT" visibility="public" isStatic="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_kiQqUQ41Eemyp88nBcmgFw" value="javax.swing.plaf.metal.MetalLookAndFeel"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_kiTGkA41Eemyp88nBcmgFw" name="WINDOWS" visibility="public" isStatic="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_kiTGkQ41Eemyp88nBcmgFw" value="com.sum.java.swing.plaf.windows.WindowLookAndFeel"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_kiU7wA41Eemyp88nBcmgFw" name="NIMBUS" visibility="public" isStatic="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_kiU7wQ41Eemyp88nBcmgFw" value="com.sum.java.swing.plaf.nimbus.NimbusLookAndFeel"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_kiWw8A41Eemyp88nBcmgFw" name="name" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_kieswA41Eemyp88nBcmgFw" name="rate" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedOperation xmi:id="_kif64A41Eemyp88nBcmgFw" name="getName" visibility="public">
+                <ownedParameter xmi:id="_kif64Q41Eemyp88nBcmgFw" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kihJAA41Eemyp88nBcmgFw" name="setName" visibility="public">
+                <ownedParameter xmi:id="_kihJAQ41Eemyp88nBcmgFw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kiiXIA41Eemyp88nBcmgFw" name="getRate" visibility="public">
+                <ownedParameter xmi:id="_kiiXIQ41Eemyp88nBcmgFw" name="return" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kijlQA41Eemyp88nBcmgFw" name="setRate" visibility="public">
+                <ownedParameter xmi:id="_kijlQQ41Eemyp88nBcmgFw" name="rate">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ke9esA41Eemyp88nBcmgFw" name="SwingTheme">
+              <ownedComment xmi:id="_ke-FwA41Eemyp88nBcmgFw">
+                <body>/** 
+ * description:压缩比例0.6
+ * @author 田何理
+ * @date 2019/01/02
+ */
+</body>
+              </ownedComment>
+              <generalization xmi:id="_kikzYA41Eemyp88nBcmgFw" general="_ke7Ccw41Eemyp88nBcmgFw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ke-s0A41Eemyp88nBcmgFw" name="NimbusTheme">
+              <ownedComment xmi:id="_ke_T4A41Eemyp88nBcmgFw">
+                <body>/** 
+ * description:压缩比例0.6
+ * @author 田何理
+ * @date 2019/01/02
+ */
+</body>
+              </ownedComment>
+              <generalization xmi:id="_kikzYQ41Eemyp88nBcmgFw" general="_ke7Ccw41Eemyp88nBcmgFw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ke_T4Q41Eemyp88nBcmgFw" name="WinTheme">
+              <ownedComment xmi:id="_kfAiAA41Eemyp88nBcmgFw">
+                <body>/** 
+ * description:压缩比例为1
+ * @author 田何理
+ * @date 2019/01/02
+ */
+</body>
+              </ownedComment>
+              <generalization xmi:id="_kikzYg41Eemyp88nBcmgFw" general="_ke7Ccw41Eemyp88nBcmgFw"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
